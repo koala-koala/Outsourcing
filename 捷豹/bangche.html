@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>绑定车辆</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<style type="text/css">
+	.table-view .table-view-cell#chepai input[type=text]{
+			width: calc(100% - 180px);
+			float: right;
+		}
+		.table-view .table-view-cell#chepai  span{
+			margin-left: 15px;
+			color: #9e1b32;
+		}
+	</style>
+</head>
+<body class="b141416">
+	<div class="main p20">
+		<form>
+			<div class="table-view">
+				<div class="table-view-cell">
+					<label>车架号<i>*</i></label>
+					<input type="text" name="" placeholder="车架号后六位">
+				</div>
+				<div class="table-view-cell " id="chepai">
+					<label>车牌号码</label>
+					<span>京</span>
+					<input type="text" name="" placeholder="车牌号码">
+				</div>
+				<div class="table-view-cell">
+					<label>车主姓名</label>
+					<input type="text" name="" placeholder="车主姓名">
+				</div>
+				<div class="table-view-cell">
+					<label>驾驶员姓名</label>
+					<input type="text" name="" placeholder="驾驶员姓名">
+				</div>
+				<div class="table-view-cell checkbox-cell">
+					<input type="checkbox" name="">
+					<span>设为默认车辆</span>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="p35">
+		<a href="" class="btn-block">确定</a>
+	</div>
+	<div class="modal-chepai">
+		<div class="head">
+			<span class="title">车牌号码</span>
+			<span class="cur" id='ctx'>京</span>
+		</div>
+		<div class="con" id="select">
+			<span class="cur">京</span>
+			<span>沪</span>
+			<span>浙</span>
+			<span>苏</span>
+			<span>粤</span>
+			<span>川</span>
+			<span>渝</span>
+			<span>京</span>
+			<span>京</span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(".table-view .table-view-cell input[type=text]").focus(function(){
+	$(this).parent(".table-view-cell").css('border','1px solid #fefefe');
+});
+$(".table-view .table-view-cell input[type=text]").blur(function(){
+	$(this).parent(".table-view-cell").css('border','1px solid #777777');
+});
+
+$("#select span").on('click',function(){
+	$(this).siblings().removeClass('cur');
+	$(this).addClass('cur');
+	$('#ctx').text($(this).text());
+});
+	
+</script>
+</html>

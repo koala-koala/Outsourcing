@@ -1,0 +1,244 @@
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: "微软雅黑";
+    color: #5e5e5e;
+    font-size: 1.4rem;
+    background: #f5f5f5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -webkitbox-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+input,
+textarea {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    outline: none;
+    resize: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+input {
+    border: 0px;
+}
+
+img {
+    width: 100%;
+    border: 0px;
+    height: auto;
+    display: block;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+
+/* 清除浮动 */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+    /* for ie6 & ie7 */
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.p_20_15 {
+    padding: 20px 15px;
+}
+.padded{
+    padding: 0 2rem;
+
+}
+.mt3 {
+    margin-top: 3px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt7 {
+    margin-top: 7px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt100 {
+    margin-top: 100px;
+}
+
+.pb0 {
+    padding-bottom: 0 !important;
+}
+
+.h50 {
+    height: 50px;
+}
+
+.mat50 {
+    margin-top: 50px;
+}
+
+.pb65 {
+    padding-bottom: 65px;
+}
+
+.p15 {
+    padding: 15px;
+}
+
+.text-c {
+    text-align: center;
+}
+
+.text-l {
+    text-align: left;
+}
+
+.text-r {
+    text-align: right;
+}
+
+.lh60 {
+    line-height: 60px;
+}
+
+.lh25 {
+    line-height: 25px;
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+.font19 {
+    font-size: 19px;
+}
+
+.font24 {
+    font-size: 24px;
+}
+
+.bf37020{
+    background: #f37020 !important;
+}
+.white {
+    background: #fff !important;
+}
+
+.icon-search{
+    background: url(../images/icon-search.png) no-repeat center/contain;
+}
+.icon-angle-double-right{
+    background: url(../images/icon-angle-double-right.png) no-repeat center/contain;
+}
+.icon-person{
+    background: url(../images/icon-person.png) no-repeat center/19px 22px;
+}
+.active .icon-person{
+    background: url(../images/icon-person-active.png) no-repeat center/19px 22px;
+}
+.icon-tel{
+    background: url(../images/icon-tel.png) no-repeat center/22px 24px;
+}
+.active .icon-tel{
+    background: url(../images/icon-tel-active.png) no-repeat center/22px 24px;
+}
+.icon-info{
+    background: url(../images/icon-info.png) no-repeat center/24px 21px;
+}
+.active .icon-info{
+    background: url(../images/icon-info-active.png) no-repeat center/24px 21px;
+}
+
+.icon-vedio{
+    background: url(../images/icon-vedio.png) no-repeat center/1.95rem 2.3rem;
+}
+.icon-list{
+    background: url(../images/icon-list.png) no-repeat center/2.15rem 2.3rem;
+}
+.icon-people{
+    background: url(../images/icon-people.png) no-repeat center/2.15rem 2.3rem;
+}
+.icon-car{
+    background: url(../images/icon-car.png) no-repeat center/1.85rem 2.3rem;
+}
+.icon-calendar-date{
+    background: url(../images/icon-calendar-date.png) no-repeat center/2.5rem 2.3rem;
+}
+.icon-list-alt{
+    background: url(../images/icon-list-alt.png) no-repeat center/1.8rem 1.8rem;
+}
+.icon-calendar{
+    background: url(../images/icon-calendar.png) no-repeat center/1.35rem 1.4rem;
+}
+.icon-sun{
+    background: url(../images/icon-sun.png) no-repeat center/1.8rem 1.8rem;
+}
+.icon-moon{
+    background: url(../images/icon-moon.png) no-repeat center/1.4rem 1.45rem;
+}
+.icon-total{
+    background: url(../images/icon-total.png) no-repeat center/0.65rem 1.7rem;
+}
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>公共信息</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body>
+    <header>
+        <h1>公共信息</h1>
+    </header>
+    <div class="content-main padded">
+        <div class="search-wrap">
+            <input type="text" name="">
+            <div class="placeholder">
+                <i class="icon icon-search"></i>
+                <span>搜索</span>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="images/public-info-banner.png">
+        </div>
+        <div class="media-list">
+            <div class="media-list-header">
+                <h1>公告活动信息</h1>
+                <span class="more">更多<i class="icon icon-angle-double-right"></i></span>
+            </div>
+            <ul class="media-list-body">
+                <li class="media-list-item">
+                    <img src="images/public-info-default.png">
+                    <div class="media-list-item-right">
+                        <h1>公告活动信息</h1>
+                        <p class="media-list-item-right-desc">公告活动信息公告活动信息公告活动信息公告活动信息公告活动信息公告活动信息公告活动信息公告活</p>
+                    </div>
+                </li>
+                <li class="media-list-item">
+                    <img src="images/public-info-default.png">
+                    <div class="media-list-item-right">
+                        <h1>公告活动信息</h1>
+                        <p class="media-list-item-right-desc">公告活动信息公告活动信息公告活动信息公告活动信息公告活动信息公告活动信息公告活动信息公告活</p>
+                    </div>
+                </li>
+                <li class="media-list-item">
+                    <img src="images/public-info-default.png">
+                    <div class="media-list-item-right">
+                        <h1>公告活动信息</h1>
+                        <p class="media-list-item-right-desc">公告活动信息公告活动信息公告活动信息公告活动信息公告活动信息公告活动信息公告活动信息公告活</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer-menu">
+        <a>
+            <i class="icon icon-person"></i>
+            <span>个人待办</span>
+        </a>
+        <a>
+            <i class="icon icon-tel"></i>
+            <span>中心通讯录</span>
+        </a>
+        <a class="active">
+            <i class="icon icon-info"></i>
+            <span>公共信息</span>
+        </a>
+    </footer>
+
+</body>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript">
+    $('.search-wrap input').focus(function() {
+        $(this).siblings('.placeholder').hide();
+    });
+    $('.search-wrap input').blur(function() {
+        if($(this).val() === '') {
+            $(this).siblings('.placeholder').show();
+        }
+    });
+</script>
+</html>

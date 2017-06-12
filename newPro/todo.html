@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>待办事项</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+
+<body>
+    <header class="orange">
+        <h1>待办事项</h1>
+    </header>
+    <div class="content-main">
+        <div class="table-view">
+            <div class="avatar-wrap">
+        <label><img src="images/avatar-default.png"></label>
+            <div class="avatar-wrap-r">
+                <h1>牦牛</h1>
+                <p class="status">待我审批</p>
+            </div>
+        </div>
+            <div class="table-view-cell">
+                <label>审批编号：</label>
+                <div class="table-view-cell-r">
+                    <input type="text" name="" value="201612011710000307105" readonly="readonly">
+                </div>
+            </div>
+            <div class="table-view-cell">
+                <label>所在部门：</label>
+                <div class="table-view-cell-r">
+                    <input type="text" name="" value="童励测试团队" readonly="readonly">
+                </div>
+            </div>
+            <div class="table-view-cell">
+                <label>类型：</label>
+                <div class="table-view-cell-r">
+                    <input type="text" name="" value="出差" readonly="readonly">
+                </div>
+            </div>
+            <div class="table-view-cell">
+                <label>内容：</label>
+                <div class="table-view-cell-r">
+                    <textarea readonly="readonly">世范是我家关爱靠大家世范是我家关爱靠 大家世范是我家关爱靠大家世范是我家关 爱靠大家世范是我家关爱靠大家世范是我 家关爱靠大家
+                    </textarea>
+                </div>
+            </div>
+            <div class="table-view-cell">
+                <div class="textarea-wrap">
+                    <label>反馈：</label>
+                    <div class="table-view-cell-r">
+                        <textarea id="textarea">世范是我家关爱靠大家世范是我家关爱靠 大家世范是我家关爱靠大家世范是我家关 爱靠大家世范是我家关爱靠大家世范是我 家关爱靠大家
+                        </textarea>
+                        <div class="garbage-wrap">
+                            <span>150/<i id="num-left">150</i></span>
+                            <i class="icon icon-garbage"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-menu orange btn-group">
+        <a>同意</a>
+        <a>拒绝</a>
+    </footer>
+</body>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript">
+    $('#textarea').on('input', function(e) {
+        let length_cur = $(this).val().length;
+        if(length_cur < 150) {
+            $('#num-left').text(150 - length_cur);
+        }else {
+            $('#num-left').text(0);
+            $(this).val($(this).val().substr(0, 150));
+        }
+    });
+    $('.icon-garbage').on('tap', function() {
+        $('#textarea').val('');
+    });
+</script>
+</html>

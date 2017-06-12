@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>车主信息</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body class="b141416">
+	<div class="main p20">
+		<div class="chezhuziliao-top">
+			<img src="images/avatar-red.png">
+			<span>show</span>
+		</div>
+		<form>
+			<div class="table-view chezhuziliao">
+				<div class="table-view-cell">
+					<label>车主姓名</label>
+					<input type="text" name="" placeholder="张三" readonly="readonly">
+					<i class="edit"></i>
+				</div>
+				<div class="table-view-cell">
+					<label>性别</label>
+					<input type="text" name="" placeholder="女">
+					<i class="edit"></i>
+				</div>
+				<div class="table-view-cell">
+					<label>手机号</label>
+					<input type="text" name="" placeholder="18238939494">
+					<i class="edit"></i>
+				</div>
+				<div class="table-view-cell">
+					<label>地址</label>
+					<input type="text" name="" placeholder="上海市浦东新区">
+					<i class="edit"></i>
+				</div>
+				<div class="table-view-cell">
+					<label>备注</label>
+					<input type="text" name="" placeholder="">
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(".table-view .table-view-cell input[type=text]").focus(function(){
+	$(this).parent(".table-view-cell").css('border','1px solid #fefefe');
+});
+$(".table-view .table-view-cell input[type=text]").blur(function(){
+	$(this).parent(".table-view-cell").css('border','1px solid #777777');
+});
+	
+</script>
+</html>

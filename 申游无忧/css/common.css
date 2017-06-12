@@ -1,0 +1,352 @@
+/*
+ * 2015-10-28 
+ * zhangfu
+ */
+
+html {
+	
+}
+ *{
+ 	box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+ 	-webkit-user-select: none;
+ 	outline: none;
+ 	-webkit-tap-highlight-color: transparent;
+ 	-webkit-tap-highlight-color: transparent;
+ }
+body,
+ul,
+ol,
+dl,
+dd,
+dir,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+blockquote,
+hr,
+figure {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+ body{
+ 	font-family: "微软雅黑";
+ 	font-size: 14px;
+ 	color: #333;
+	-webkit-text-size-adjust: none; /*关闭字体大小自动调节功能*/
+ 	-webkit-overflow-scrolling: touch;/*允许有独立的滚动区和触摸回弹*/
+ }
+ html,body{
+ 	background-color: #EBEBEB;
+ 	height: 100%;
+ 	overflow: hidden;
+ }
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+/*
+		 * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+		 */
+
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+/*
+		 * Prevents modern browsers from displaying 'audio' without controls
+		 */
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+/*
+		 * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+		 * Known issue: no IE6 support
+		 */
+
+[hidden] {
+	display: none;
+}
+a {
+	background: transparent;
+	text-decoration: none;
+}
+a:active,a:hover{
+	outline: 0;/**轮廓**/
+}
+
+@font-face {
+	font-family: 'Graublau Web';
+	src: url('GraublauWeb.eot');
+	src: local('☺'), url('GraublauWeb.woff') format('woff'), url('GraublauWeb.ttf') format('truetype');
+}
+
+
+.padded_10{
+	margin: 10px;
+}
+.padded_20{
+	margin: 20px;
+}
+.mBot_10{
+	margin-bottom: 10px;
+}
+.mTop_10{
+	margin-top: 10px;
+}
+.inline{
+	display: inline-block;
+}
+.block{
+	display: block !important;
+}
+.none{
+	display: none !important;
+}
+.table{
+	display: table;
+}
+.visible{
+	visibility: visible !important;
+}
+.ellipsis{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.text-center{
+	text-align: center !important;
+}
+.text-left{
+	text-align: left !important;
+}
+.text-right{
+	text-align: right !important;
+}
+.text-justify{
+	text-align: justify !important;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/**清除浮动**/
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+	overflow: hidden;
+}
+.clearfix {
+	zoom: 1;
+}
+h1, .h1{
+	font-size: 36px;
+}
+h2, .h2{
+	font-size: 30px;
+}
+h3, .h3{
+	font-size: 24px;
+}
+h4, .h4{
+	font-size: 18px;
+}
+h5, .h5{
+	font-size: 14px;
+}
+h6, .h6{
+	font-size: 12px;
+}
+.subtitle{
+	font-size: 14px;
+}
+p{
+	font-size: 13px;
+	color: #666;
+	line-height: 20px;
+}
+.mt25{
+	margin-top: 25px !important;
+}
+/**
+ * *
+ */
+html,body{
+	height: 100%;
+	background: #f2f2f2;
+	overflow-y: auto;
+}
+.main{
+
+}
+.main .banner{
+
+}
+.main .banner img{
+	width: 100%;
+	display: block;
+}
+.main .logo-wrapper{
+	background: #fff;
+	padding: 20px 15px;
+	position: relative;
+
+}
+.main .logo-wrapper:after,
+.main .wrapper .title:after,
+.main .wrapper .title:before{
+	content: '';
+	position: absolute;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #ececec;
+	transform:scaleY(.5);
+	-webkit-transform:scaleY(.5);
+}
+.main .wrapper .title:before{
+	top: 0;
+}
+.main .logo-wrapper img{
+	vertical-align: top;
+	margin-right: calc((100% - 296px)/3);
+}
+.main .logo-wrapper img:last-child{
+	margin-right: 0;
+}
+.main .wrapper{
+	margin-top: 5px;
+}
+.main .wrapper .title{
+	height: 35px;
+	line-height: 35px;
+	background: #fff;
+	color: #24b9b7;
+	font-size: 17px;
+	text-align: center;
+	position: relative;
+}
+.main .wrapper .body{
+	padding-left: 15px;
+	font-size: 13px;
+}
+.main .wrapper p.body-p{
+	color: #666666;
+	padding: 15px 0;
+	
+	border-bottom:1px solid #dedddd;
+	padding-right: 15px;
+}
+.main .wrapper .body-cell{
+	margin-top: 15px;
+	padding-right: 15px;
+}
+.main .wrapper .body-cell label{
+	color: #0ab5b3;
+}
+.main .wrapper .body-cell span{
+	color: #666;
+	margin-left: 15px;
+}
+.main .wrapper .wrapper-cell{
+	background: #fff
+}
+.main .wrapper .wrapper-cell .title-wrapper{
+	padding: 5px 0;
+	position: relative;
+}
+.main .wrapper .wrapper-cell .title-wrapper span.title-bor{
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	border-left: 5px solid #24b9b7;
+	padding-left: 10px;	
+	font-size: 15px;
+}
+.main .wrapper .wrapper-cell .title-wrapper .num{
+	position: absolute;
+	height: 25px;
+	line-height: 25px;
+	display: inline-block;
+	right: 50px;
+	top: 5px;
+	font-size: 15px;
+}
+.main .wrapper .wrapper-cell .title-wrapper:after{
+	content: '';
+	content: '';
+	position: absolute;
+	height: 1px;
+	bottom: 0;
+	left: 15px;
+	right: 0;
+	background: #ececec;
+	transform:scaleY(.5);
+	-webkit-transform:scaleY(.5);
+}
+.main .wrapper .wrapper-cell .title-wrapper i{
+	display: block;
+	width: 12px;
+	height: 25px;
+	position: absolute;
+	right: 15px;
+	top: 5px;
+}
+.main .wrapper .wrapper-cell .title-wrapper i.up{
+	background: url(../images/up.png) no-repeat center/contain;
+}
+.main .wrapper .wrapper-cell .title-wrapper i.down{
+	background: url(../images/down.png) no-repeat center/contain;
+}
+.main .wrapper .wrapper-cell p {
+	padding: 10px 15px;
+	color: #666;
+}
+
+
+.main .btn-wrapper{
+	padding: 35px 15px;
+}
+.main .btn-wrapper a.btn-block{
+	display: block;
+	width: 100%;
+	height: 49px;
+	line-height: 49px;
+	color: #fff;
+	text-align: center;
+	background: #24b9b7;
+	font-size: 18px;
+}
+
+
+
+
+

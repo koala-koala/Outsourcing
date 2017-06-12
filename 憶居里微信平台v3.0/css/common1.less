@@ -1,0 +1,102 @@
+@font-c:#353535;
+@font-red:#a31b1f;
+html,body{
+    background: #f7f7f7;
+    color: @font-c;
+}
+.mt3{
+	margin-top: 3px;
+}
+.main{
+	background: #f7f7f7;
+	.warn-wrapper{
+		overflow: hidden;
+		padding: 15px 30px;
+		background: #fff;
+		span[class^='icon-']{
+			float: left;
+			display: block;
+			width: 50px;
+			height: 42px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			margin: 0 10px;
+			&.icon-light{
+				background-image: url(../images/icon-light.png);
+			}
+		}
+		p{
+			font-size: 19px;
+			color: @font-c;
+			float: left;
+			margin-left: 5px;
+			width: calc(100% - 80px);
+			line-height: 21px;
+			margin-top: 0;
+			&.stress{
+				font-size: 24px;
+				color: @font-red;
+			}
+		}
+	}
+	.label-wrapper{
+		background: #fff;
+		height: 68px;
+		line-height: 68px;
+		font-size: 19px;
+		padding: 0 20px;
+		span{
+			color: @font-red;
+			font-size: 21px;
+		}
+	}
+	p.font-title{
+		height: 68px;
+		line-height: 68px;
+		font-size: 19px;
+		padding: 0 20px;
+	}
+	ul.table-pay{
+		background:#fff;
+		padding: 0 15px;
+		li{
+			a{
+				display: block;
+			border-bottom:1px solid #e1e1e1;
+			height: 68px;
+			line-height: 68px;
+			font-size: 19px;
+			span[class^=icon]{
+				display: block;
+				width: 57px;
+				height: 100%;
+				float: left;
+				background-repeat: no-repeat;
+				background-position: left center;
+				&.icon-wechat{
+					background-image: url(../images/icon-wechat.png);
+					background-size: 38px;
+				}
+				&.icon-pay{
+					background-image: url(../images/icon-pay.png);
+					background-size: 32px;
+				}
+				&.icon-apple{
+					background-image: url(../images/icon-apple.png);
+					background-size: 33px;
+				}
+				&.icon-union{
+					background-image: url(../images/icon-union.png);
+					background-size: 43px;
+				}
+			}
+			.words-wrapper{
+				float: left;
+				width: calc(100% - 57px);
+			}
+		}
+		}
+		
+	}
+}

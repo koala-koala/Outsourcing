@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="container">
+<view class="header">
+  <view class="icon-angle-left"></view>
+  <text>景区情况</text>
+</view>
+  <view class="ul">
+    <view class="li">
+      <image src="../images/avatar.jpeg" class="li-l"></image>
+      <view class="li-r">
+        <text class="title">公告标题</text>
+        <text class="time">2017-03-08</text>
+        <text class="desc">公告简介公告简介公告简介公告简介公告简介公告简介公告简介公告简介公告简介</text>
+      </view>
+    </view>
+    <view class="li">
+      <image src="../images/avatar.jpeg" class="li-l"></image>
+      <view class="li-r">
+        <text class="title">公告标题</text>
+        <text class="time">2017-03-08</text>
+        <text class="desc">公告简介公告简介公告简介公告简介公告简介公告简介公告简介公告简介公告简介</text>
+      </view>
+    </view>
+    <view class="li">
+      <image src="../images/avatar.jpeg" class="li-l"></image>
+      <view class="li-r">
+        <text class="title">公告标题</text>
+        <text class="time">2017-03-08</text>
+        <text class="desc">公告简介公告简介公告简介公告简介公告简介公告简介公告简介公告简介公告简介</text>
+      </view>
+    </view>
+  </view>
+  <view class="more-wrap">
+    <view class="icon-angle-double-down"></view>
+    <text class="more">查看更多</text>
+  </view>
+  <view class="table-view">
+    <view class="table-view-cell table-view-title">景点人流分布</view>
+    <view class="table-view-cell" wx:for="{{spotsList}}">
+      <text class="table-view-cell-label">{{item.name}}</text>
+      <view class="progress">
+        <view class="inner" style="width:{{item.num}}"></view>
+        <view class="tips" style="left:{{item.num}}"><view class="tips-inner">{{item.num}}</view></view>
+      </view>
+    </view>
+  </view>
+</view>

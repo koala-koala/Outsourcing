@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>沪申福</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+
+<body>
+	<div class="main">
+		<div class="banner">
+			<img src="images/banner.jpg">
+		</div>
+		<div class="logo-wrapper">
+			<img src="images/logo1.png" width="63">
+			<img src="images/logo2.png" width="64">
+			<img src="images/logo3.png" width="98">
+			<img src="images/logo4.png" width="60">
+		</div>
+		<div class="wrapper">
+			<div class="title">产品介绍</div>
+			<div class="body">
+				<p class="body-p">
+					申游无忧产品专为在上海旅游人士量身定做，全面涵盖被保险人在上海出行期间所造成的意外事故。
+				</p>
+				<div class="body-cell">
+					<label>最高可赔：</label>
+					<span>80万元</span>
+				</div>
+				<div class="body-cell">
+					<label>保障年龄：</label>
+					<span>零周岁（出生满30天）至 80周岁</span>
+				</div>
+				<div class="body-cell">
+					<label>保障期限：</label>
+					<span>1元1天，最多投保30天</span>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper mt25">
+			<div class="title">保障责任</div>
+			<div class="wrapper-cell">
+				<div class="title-wrapper">
+					<span class="title-bor">意外身故及伤残</span>
+					<span class="num">1万</span>
+					<i class="up" onclick="$(this).parent().siblings('p').toggle();if($(this).hasClass('up')){$(this).removeClass().addClass('down');}else{$(this).removeClass().addClass('up');}"></i>
+				</div>
+				<p>
+					在保险期间内，被保险人在沪旅行期间遭遇意外事故，保险公司按保险单上所载被保险人相应的保险金额给付身故保险金、伤残保险金。
+				</p>
+			</div>
+			<div class="wrapper-cell">
+				<div class="title-wrapper">
+					<span class="title-bor">意外伤害医疗 </span>
+					<span class="num">1万</span>
+					<i class="up" onclick="$(this).parent().siblings('p').toggle();if($(this).hasClass('up')){$(this).removeClass().addClass('down');}else{$(this).removeClass().addClass('up');}"></i>
+				</div>
+				<p>
+					在保险期间内，被保险人旅行期间每次遭受意外，在保险公司指定或者认可的医疗机构治疗由该意外引致的伤害，由此发生符合上海城镇职工基本医疗保险规定的支/给付范围和标准的、医学必要的医疗费用，除本合同另有约定外，保险公司给付医疗保险金。（500元免赔，100%赔付）
+				</p>
+			</div>
+			<div class="wrapper-cell">
+				<div class="title-wrapper">
+					<span class="title-bor">责任免除 </span>
+				</div>
+				<p>
+					1. 本产品不承保被保险人从事潜水、跳伞、滑雪、滑水、滑翔、
+    狩猎、攀岩、探险、武术比赛、摔跤、特技表演、赛马、
+    赛车、蹦极、建筑工地等高风险运动和活动。
+				</p>
+				<p>
+					2. 每人限购一份，超过限额部分本产品不予负责。
+				</p>
+			</div>
+		</div>
+		<div class="btn-wrapper">
+			<a href="#" class="btn-block">立即投保</a>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>服务顾问</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body class="b141416">
+	<div class="main ">
+		<ul class="guwen">
+			<li>
+				<img src="images/avatar-red.png">
+				<div class="li-c">
+					<span>顾问电话</span>
+					<span>服务电话</span>
+				</div>
+				<div class="li-r">
+					<span>张三</span>
+					<span>158349324234</span>
+				</div>
+			</li>
+			<li>
+				<img src="images/avatar-red.png">
+				<div class="li-c">
+					<span>顾问电话</span>
+					<span>服务电话</span>
+				</div>
+				<div class="li-r">
+					<span>张三</span>
+					<span>158349324234</span>
+				</div>
+			</li>
+			<li>
+				<img src="images/avatar-red.png">
+				<div class="li-c">
+					<span>顾问电话</span>
+					<span>服务电话</span>
+				</div>
+				<div class="li-r">
+					<span>张三</span>
+					<span>158349324234</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+	$("ul.guwen li").on('click',function(){
+		$(this).css('border-color','#fff');
+		$(this).children('img').attr('src','images/avatar-white.png');
+		$(this).siblings().css('border-color','#7c192b');
+		$(this).siblings().children('img').attr('src','images/avatar-red.png');
+	});
+
+</script>
+</html>

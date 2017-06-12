@@ -1,0 +1,168 @@
+/**index.wxss**/
+.header{
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #fafafa;
+  font-size: 36rpx;
+  color: #333;
+  width: 100%;
+  position: relative;
+  text-align: center
+}
+.header .icon-angle-left{
+  width: 22rpx;
+  height: 40rpx;
+  display: inline-block;
+  background: url(../images/icon-angle-left.png) no-repeat center/contain;
+  position: absolute;
+  left: 30rpx;
+  top: 22rpx;
+}
+.ul{
+  padding: 0 30rpx;
+  background: #fff;
+}
+.ul .li{
+  padding: 30rpx 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.ul .li:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2rpx;
+  background: #ebebeb;
+  transform: scaleY(.5);
+}
+/*.ul .li:last-child:after{
+  height: 0;
+}*/
+.ul .li .li-l{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 6rpx;
+  float: left;
+}
+.ul .li .li-r{
+  float: left;
+  width: calc(100% - 140rpx);
+  margin-left: 10rpx;
+  position: relative
+}
+.ul .li .li-r .title{
+  font-size: 36rpx;
+  color: #333333;
+  display: block;
+  line-height: 50rpx;
+}
+.ul .li .li-r .time{
+  position: absolute;
+  font-size: 28rpx;
+  right: 0;
+  top: 0;
+  color: #999999;
+  line-height: 50rpx;
+}
+.ul .li .li-r .desc{
+  font-size: 28rpx;
+  color: #666;
+  line-height: 40rpx;
+}
+.more-wrap{
+  padding: 30rpx 0;
+  color: #84ad40;
+  font-size: 28rpx;
+  text-align: center;
+  background: #fff;
+  width: 100%;
+}
+.more-wrap .icon-angle-double-down{
+  display: inline-block;
+  width: 24rpx;
+  height: 20rpx;
+  background: url(../images/icon-angle-double-down.png) no-repeat center/contain;
+  margin-right: 10rpx;
+}
+.table-view{
+  margin-top: 20rpx;
+  width: 100%;
+  background: #fff;
+  padding: 0 30rpx;
+}
+.table-view .table-view-cell{
+  padding: 40rpx 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.table-view .table-view-cell:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2rpx;
+  background: #ebebeb;
+  transform: scaleY(.5);
+}
+.table-view .table-view-title{
+  text-align: center;
+  font-size: 36rpx;
+  display: block;
+}
+.table-view .table-view-cell .table-view-cell-label{
+  width: 200rpx;
+  font-size: 28rpx;
+  color: #5c5c5c;
+  display: block;
+  text-align: right;
+}
+.table-view .table-view-cell .progress{
+  width: calc(100% - 360rpx);
+  margin: 0 40rpx;
+  background: #cccccc;
+  height: 6rpx;
+  border-radius: 2rpx;
+  position: relative;
+}
+.table-view .table-view-cell .progress .inner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6rpx;
+  border-radius: 2rpx;
+  background: #84ad40;
+  width: 100%;
+}
+.table-view .table-view-cell .progress .tips{
+  position: absolute;
+  bottom: 20rpx;
+  left: 100%;
+  margin-left: -40rpx;
+  width: 77rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  background: #84ad40;
+  border-radius: 16rpx;
+  text-align: center;
+  font-size: 20rpx;
+  color: #fff;
+}
+.table-view .table-view-cell .progress .tips .tips-inner{
+  position: relative;
+}
+.table-view .table-view-cell .progress .tips .tips-inner:after{
+  content: '';
+  position: absolute;
+  bottom: -16rpx;
+  left: 50%;
+  margin-left: -5rpx;
+  border-width: 8rpx;
+  border-style: solid;
+  border-color:  #84ad40 transparent transparent transparent;
+}
