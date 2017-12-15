@@ -1,0 +1,381 @@
+html {
+	height: 100%;
+}
+body {
+	font-family: "微软雅黑";
+	width:100%;color:#191919;font-size:14px;
+}
+html,body{
+    background: #f7f7f7;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	-webkitbox-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+ul {
+	list-style: none;
+}
+
+a:link, a:visited,  a:hover,a:active {
+	color:#333;text-decoration:none;
+}
+input, textarea {
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	outline: none;
+}
+h1,h2,h3,h4,h5,h6 {
+　　　font-size:16px;
+	font-weight: normal;
+　　}
+input{border:0px;}
+img{width:100%;border:0px;height:auto;display:block;}
+i,em{font-style:normal;}
+/* 清除浮动 */
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+    overflow:hidden;
+}
+.clearfix {
+    zoom:1; /* for ie6 & ie7 */
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.p_20_15{
+	padding: 20px 15px;
+}
+.mt3 {
+  margin-top: 3px;
+}
+.mt5 {
+  margin-top: 5px;
+}
+.mt7 {
+  margin-top: 7px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt25{
+	margin-top: 25px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt100 {
+  margin-top: 100px;
+}
+.pb0{
+	padding-bottom: 0 !important;
+}
+.h50{
+	height: 50px;
+}
+.mat50{margin-top: 50px;}
+.pb65{
+	padding-bottom: 65px;
+}
+.p15{
+	padding: 15px;
+}
+.text-c{
+	text-align: center;
+}
+.text-l{
+	text-align: left;
+}
+.text-r{
+	text-align: right;
+}
+.lh60{
+	line-height: 60px;
+}
+.lh25{
+	line-height: 25px;
+}
+.font16{
+	font-size: 16px;
+}
+.font19{
+	font-size: 19px;
+}
+.font24{
+	font-size: 24px;
+}
+.bgrey{
+	background: #f7f7f7 !important;
+}
+.cblue{
+	color: #2a62c7 !important;
+}
+.cred{
+	color: #a31b1f !important;
+}
+.white{
+	background: #fff !important;
+}
+/*主体部分*/
+.mask .shareTo,.mask .shareCancel{background: #fff;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;padding:15px;}
+.mask .shareTo li{width: 25%;float: left;}
+.mask .shareTo li span{width: 3em;height: 3em;background: url(../images/wx-icon.png);display: block;margin:0 auto;background-size: 3em 3em;}
+.mask .shareTo li span.wx_icon{background: url(../images/wx-icon.png);background-size: 3em 3em;}
+.mask .shareTo li span.py_icon{background: url(../images/py-icon.png);background-size: 3em 3em;}
+.mask .shareTo li span.wb_icon{background: url(../images/wb-icon.png);background-size: 3em 3em;}
+.mask .shareTo li span.qq_icon{background: url(../images/qq-icon.png);background-size: 3em 3em;}
+.mask .shareTo p{text-align: center;line-height: 1.5em;}
+.mask .shareTo h3{margin-bottom: 15px;text-align: center;font-weight: normal;}
+.mask,.calendermask{width: 100%;height: 100%;position: fixed;top:0;left:0;background: rgba(0,0,0,0.5);display: none;z-index:100;}
+.mask .sharebox{width: 90%;position: absolute;left:5%;bottom:15px;text-align: center;}
+.sharebox{display: none;}
+.shareCancel{margin-top: 15px;text-align: center;}
+.footer{position: fixed;bottom: 0px;left:0px;height: 55px;width:100%;background: #fff;z-index:99;}
+.share-icon{width: 40px;height: 40px;background: url(../images/share-icon.png);background-size: 40px 40px;display: inline-block;vertical-align: middle;}
+.phone-icon{width: 40px;height: 40px;background: url(../images/phone-icon.png);background-size:40px 40px;display: inline-block;vertical-align: middle;}
+.footer a{display: block;vertical-align: middle;}
+.footer a.order{background: #a31b1f;color:#fff;text-align: center;font-size: 20px;}
+.box{display: box;display: -webkit-box;display: -moz-box;}
+.box .flex{box-flex:1;-webkit-box-flex:1;-moz-box-flex:1;}
+.footer .box .flex{padding: 0;height: 40px;line-height: 55px;}
+.footer li{width: 55px;text-align: center;height: 55px;padding:7.5px;}
+.shareBox2{
+	width: 280px;
+	background: #fff;
+	top: 50%;
+	margin-left: -140px;
+	left: 50%;
+	margin-top: -125px;
+	padding: 35px 25px;
+	position: fixed;
+}
+.shareBox2 .line{
+	position: relative;
+	padding-bottom: 20px;
+}
+.shareBox2 .line:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 90px;
+	left: 50%;
+	height: 1px;
+	margin-left: -45px;
+	background: #191919;
+}
+.shareBox2 a.btn-title{
+	width: 170px;
+	height: 30px;
+	line-height: 30px;
+	border:1px solid #a31b1f;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 18px;
+	color: #a31b1f;
+	display: block;
+	margin: 0 auto;
+}
+.shareBox2 p{
+	text-align: center;
+	font-size: 12px;
+	color: #1a1a1a;
+	line-height: 21px;
+	margin-top: 10px;
+}
+.popup{
+	position: fixed;
+	background: #24292c;
+	top: 20px;
+	left: 15px;
+	right: 15px;
+	bottom: 60px;
+	color: #fff;
+	padding:15px 20px;
+	text-align: center;
+	z-index: 100;
+	overflow: auto;
+}
+.popup h3{
+	font-size: 18px;
+}
+.popup .box{
+	overflow: hidden;
+	display: block;
+}
+.popup .box li{
+	float: left;
+	width: 25%;
+	margin-top: 8%;
+}
+.popup .equiIcon {
+	padding:0;
+	margin: 0;
+}
+.popup .equiIcon .icon{
+	width: 45px;
+	height: 45px;
+	background-size:cover;
+	background-position:center;
+}
+.popup .equiIcon .run-icon{background-image:url(../images/icon-run.png);}
+.popup .equiIcon .air-icon{background-image:url(../images/icon-air.png);}
+.popup .equiIcon .fridge-icon{background-image:url(../images/icon-fridge.png);}
+.popup .equiIcon .bed-icon{background-image:url(../images/icon-bed.png);}
+.popup .equiIcon .food-icon{background-image:url(../images/icon-air.png);}
+
+.popup .price{
+	position: relative;
+	margin: 0 10.6% 0 9.3%;
+}
+.popup .price li{
+	overflow: hidden;
+	margin-top: 6.7%;
+	color: #fff;
+	font-size: 16px;
+}
+.popupMask{width: 100%;height: 100%;position: fixed;left:0;top:0;background:#f7f7f7;display: none;z-index:999;}
+.popupMask .icon-del{
+	display: block;
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	bottom: 5px;
+	left: 50%;
+	margin-left: -25px;
+	background: url(../images/icon-del.png) no-repeat center/contain;
+}
+/**弹框 WiFi**/
+.black-bg{
+    background: #24292c;
+    color: #fff;
+    padding:15px 20px;
+}
+.black-bg .ewmCode{width:157px;height: 157px;display:block;margin:60px auto; }
+.andrioduser{margin-top: 35px;}
+.andrioduser h3,.iosuser h3{font-size:20px }
+.andrioduser p,.iosuser p{font-size: 16px;line-height: 25px;}
+.black-bg .equipment{color:#fff; }
+.black-bg .foodTitle{font-size: 18px;text-align: center;}
+.black-bg .foodList{font-size: 16px;height: calc(100% - 85px);overflow:auto;}
+.black-bg .foodList li{margin-top: 40px;}
+.black-bg .foodList li p{
+	text-align: left;
+	line-height: 28px;
+}
+.addreducebtn{float: right;}
+.addreducebtn span{width: 28px;height: 28px;display:inline-block;vertical-align: middle;}
+.addreducebtn i{margin:0 10px;display: inline-block;}
+.addreducebtn span.reduceBtn{background: url(../images/reduce-icon.png);background-size: 28px 28px;display: none;}
+.addreducebtn span.addBtn{background: url(../images/add-icon.png);background-size: 28px 28px;}
+.black-bg .submitOrder{background: #a31b1f;text-align: center;line-height: 50px;height: 50px;font-size: 18px;position: absolute;bottom: 15px;left:35px;right: 35px}
+.paddlr35{padding-left: 35px;padding-right: 35px;}
+/**确认弹框**/
+.confirmMask{
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.45); 
+	display: none;
+}
+.confirmMask .confirm{
+	width: 290px;
+	height: 175px;
+	background: #fff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -80px;
+	margin-left: -145px;
+	z-index: 101;
+	padding: 30px 15px;
+	text-align: center;
+	overflow: hidden;
+}
+.confirmMask .confirm p.title{
+	font-size: 18px;
+	position: relative;
+	line-height: 20px;
+}
+.confirmMask .confirm p.title:before,
+.confirmMask .confirm p.title:after{
+	content: '';
+	position: absolute;
+	width: 75px;
+	height: 1px;
+	background: #191919;
+	left: 0;
+	top: 10px;
+}
+.confirmMask .confirm p.title:after{
+	left: auto;
+	right: 0;
+}
+.confirmMask .confirm p.desc{
+	font-size: 16px;
+	color: #353535;
+	margin-top: 24px;
+}
+.confirmMask .confirm a{
+	display: block;
+	width: 50%;
+	border-right: 1px solid #191919;
+	float: left;
+	margin-top: 33px;
+	font-size: 16px;
+}
+.confirmMask .confirm a:last-child{
+	border-right: 0;
+}
+/**分享弹框**/
+.shareMask{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.9);
+}
+.shareMask img.share{
+	width: 93px;
+	position: absolute;
+	top: 10px;
+	right: 12px;
+}
+.shareMask p{
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	padding-top: 73px;
+	line-height: 25px;
+}
+.shareMask .orange{
+	color: #ff5400;
+	padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

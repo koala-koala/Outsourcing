@@ -1,0 +1,101 @@
+<!doctype html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <title>i 足迹</title>
+    <link type="text/css" rel="stylesheet" href="css/global.css" />
+    <link type="text/css" rel="stylesheet" href="css/common.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="banner">
+            <img src="images/banner.png" />
+            <div class="menu-bar">
+                <a class="encyclopedia">i 百科</a>
+                <a class="camera circle"><img src="images/icon-camera.png" /></a>
+                <a class="images circle"><img src="images/icon-image.png" /></a>
+            </div>
+        </div>
+        <div class="title">评论</div>
+        <ul>
+            <li>
+                <div class="li-l male"><img src="images/icon-male.png" /></div>
+                <div class="li-r">
+                    <h1>非一般的老先生</h1>
+                    <p>万国群厦沧桑松， 东方明珠相映红。很值得 来玩。
+                    </p>
+                </div>
+            </li>
+            <li>
+                    <div class="li-l female"><img src="images/icon-female.png" /></div>
+                <div class="li-r">
+                    <h1>非一般的老先生</h1>
+                    <p>风景优美，服务态度很好。很开心的一次旅 游......
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <div class="personal-comment">
+            <div class="personal">
+                <div class="li-l female"><img src="images/icon-female.png" /></div>
+                <div class="li-r">
+                    <h1>爱旅游的女汉子</h1>
+                    <p>A woman who loves traveling </p>
+                </div>
+            </div>
+            <textarea placeholder="看见这个美景，你想说点什么..."></textarea>
+            <p class="tip">至少输入8个字</p>
+        </div>
+        <div class="consult-wrap">
+            <img class="consult" src="images/icon-consult.png" />
+            <img class="line" src="images/icon-line.png" />
+            <span>咨询请点击电话，客服工作时间 9：00 - 21：00</span>
+            <a>
+                <img src="images/icon-tel.png" />
+                <span>i 中心</span>
+            </a>
+        </div>
+        <a class="btn btn-block">提交</a>
+    </div>
+    <div class="mask">
+        <div class="popup">
+            <div class="popup-header">
+                <img src="images/icon-smile.png" />
+                <a class="icon-close">
+                        <img src="images/icon-close.png" />
+                </a>
+            </div>
+            <div class="popup-body">
+                <p>恭喜你<br/>图片上传成功</p>
+            </div>
+            <a class="btn">我知道了</a>
+        </div>
+    </div>
+    <div class="mask" style="display: none">
+            <div class="popup">
+                <div class="popup-header">
+                    <img src="images/icon-sad.png" />
+                    <a class="icon-close">
+                        <img src="images/icon-close.png" />
+                    </a>
+                </div>
+                <div class="popup-body">
+                    <p>抱歉哦<br/>一不小心网络走丢了</p>
+                </div>
+                <a class="btn">重新上传</a>
+            </div>
+        </div>
+</body>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script>
+    $('body').on('click', '.icon-close', function() {
+        $('.mask').fadeOut();
+    });
+</script>
+
+</html>

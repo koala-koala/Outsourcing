@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>支付成功</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!-- <link rel="stylesheet" href="css/3dslider.css" /> -->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <style type="text/css">
+    .main {
+        padding-bottom: 65px;
+    }
+    .main .warn-wrapper {
+        padding: 38px 15px 28px 15px;
+    }
+    .swiper-container {
+        width: 100%;
+        height:270px;
+        background: #fff;
+        padding:20px 0 40px 0;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: 80%;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide:first-child{
+        /*margin-left: 35px;*/
+    }
+    .swiper-slide img{
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="warn-wrapper">
+            <div class="clearfix">
+                <span class="icon-light-red"></span>
+                <p><span class="stress">恭喜</span>，您的订单已支付成功 ！<span>稍后我们掌柜会与您联系 </span></p>
+            </div>
+            <a>查看订单详情<span> 》</span></a>
+        </div>
+        <!-- 你可能感兴趣 -->
+        <div class="mt30 interest-wrapper">
+            <div class="title-line-wrapper">
+                <span class="title-line">您可能感兴趣</span>
+                <p>活动、美食、特色服务，快来体验一下吧！</p>
+            </div>
+            <!--美食-->
+            <div>
+                <div class="type-wrapper">
+                    <i class="icon-food"></i>
+                    <h4>美食</h4>
+                    <p>憶小主尽情宠爱你的味蕾！</p>
+                    <i class="icon-right"></i>
+                </div>
+                <p class="tip">注：到店后可在入住服务中提前点单，减少等待时间！</p>
+                <div class=" interest-wrapper">
+                    <div class="title-line-wrapper">
+                        <span class="title-line">小主私房菜</span>
+                        <p>每日限量准备，只为您的到来！</p>
+                        <i class="icon-right"></i>
+                    </div>
+                </div>
+               <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/pay_succes_food.jpg"></div>
+                    <div class="swiper-slide"><img src="images/pay_success_act.jpg"></div>
+                    <div class="swiper-slide"><img src="images/pay_succes_food.jpg"></div>
+                    <div class="swiper-slide"><img src="images/pay_success_act.jpg"></div>
+                    <div class="swiper-slide"><img src="images/pay_succes_food.jpg"></div>
+                    <div class="swiper-slide"><img src="images/pay_success_act.jpg"></div>
+                </div>
+            </div>
+            </div>
+            <!--服务-->
+            <div>
+                <div class="type-wrapper">
+                    <i class="icon-service"></i>
+                    <h4>入住服务</h4>
+                    <p>更多的发现与体验等着您！</p>
+                    <i class="icon-right"></i>
+                </div>
+                <ul class="media-thumb-list">
+                    <li>
+                        <img src="images/pay_success_coffee.jpg">
+                        <p>咖啡吧</p>
+                    </li>
+                    <li>
+                        <img src="images/pay_success_bar.jpg">
+                        <p>书吧</p>
+                    </li>
+                    <li>
+                        <img src="images/pay_success_hotspring.jpg">
+                        <p>温泉</p>
+                    </li>
+                </ul>
+                <!-- <a href="" class="more">查看更多</a> -->
+            </div>
+            <div class="notice-wrapper mt3">
+                <i class="icon-notice"></i>
+                <p>入住期间您可以参加的
+                    <br> 特色憶居里活动！
+                </p>
+                <i class="icon-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+            <ul class="footer-body box">
+                <li class="flex">
+                    <a class="order" href="#">再订一间</a>
+
+                </li>
+            </ul>
+        </div>
+</body>
+<script type="text/javascript" src="js/public/zepto.min.js"></script>
+<script type="text/javascript" src="js/libs/swiper-3.3.1.jquery.min.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        paginationClickable: true,
+        spaceBetween: 15
+    });
+</script>
+
+</html>

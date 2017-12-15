@@ -1,0 +1,434 @@
+/*
+ * 2015-10-28 
+ * zhangfu
+ */
+
+html {}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body,
+ul,
+ol,
+dl,
+dd,
+dir,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+blockquote,
+hr,
+figure {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    -webkit-text-size-adjust: none;
+    /*关闭字体大小自动调节功能*/
+    -webkit-overflow-scrolling: touch;
+    /*允许有独立的滚动区和触摸回弹*/
+}
+
+html,
+body {
+    background-color: #EBEBEB;
+    height: 100%;
+    overflow: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+
+/*
+         * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+         */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+
+/*
+         * Prevents modern browsers from displaying 'audio' without controls
+         */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+
+/*
+         * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+         * Known issue: no IE6 support
+         */
+
+[hidden] {
+    display: none;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+    /**轮廓**/
+}
+
+@font-face {
+    font-family: 'Graublau Web';
+    src: url('GraublauWeb.eot');
+    src: local('☺'), url('GraublauWeb.woff') format('woff'), url('GraublauWeb.ttf') format('truetype');
+}
+
+
+.padded_10 {
+    margin: 10px;
+}
+
+.padded_20 {
+    margin: 20px;
+}
+
+.mBot_10 {
+    margin-bottom: 10px;
+}
+
+.mTop_10 {
+    margin-top: 10px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.block {
+    display: block !important;
+}
+
+.none {
+    display: none !important;
+}
+
+.table {
+    display: table;
+}
+
+.visible {
+    visibility: visible !important;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/**清除浮动**/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+h1,
+.h1 {
+    font-size: 36px;
+}
+
+h2,
+.h2 {
+    font-size: 30px;
+}
+
+h3,
+.h3 {
+    font-size: 24px;
+}
+
+h4,
+.h4 {
+    font-size: 18px;
+}
+
+h5,
+.h5 {
+    font-size: 14px;
+}
+
+h6,
+.h6 {
+    font-size: 12px;
+}
+
+.subtitle {
+    font-size: 14px;
+}
+
+p {
+    font-size: 13px;
+    color: #666;
+    line-height: 20px;
+}
+
+.mt25 {
+    margin-top: 25px !important;
+}
+
+
+/**
+ * *
+ */
+
+html,
+body {
+    height: 100%;
+    background: #fff;
+    overflow-y: auto;
+}
+
+.banner {
+    position: relative;
+    overflow: auto;
+}
+
+.banner li {
+    list-style: none;
+}
+
+.banner ul li {
+    float: left;
+    color: #fff;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/banner1.jpg);
+}
+.banner ul li:nth-child(2) {
+    background-image: url(../img/banner.jpg);
+}
+.banner ul li .desc-wrap{
+    position: absolute;
+    top: 177px;
+    left: 50%;
+    width: 509px;
+    height: 111px;
+    margin-left: -255px;
+    text-align: center;
+}
+.banner ul li .desc-wrap h1 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+}
+.banner ul li .desc-wrap h2{
+    color: rgb(225, 225, 225);
+    font-size: 24px;
+}
+.about-us{
+    position: relative;
+    width: 1200px;
+    margin: 90px auto;
+    overflow: hidden;
+}
+.about-us img{
+    width: 653px;
+    float: left;
+    margin-right: 40px;
+}
+.about-us .desc-wrap{
+    line-height: 1.8;
+    padding: 0;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: normal;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+    float: left;
+    width: 500px;
+}
+.about-us .desc-wrap h1{
+    text-align: justify;
+    line-height: 2em;
+    font-family: 微软雅黑;
+    font-size: 30px;
+    color: #333333;
+}
+.about-us .desc-wrap  p{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    color: #666666;
+    margin-top: 20px;
+}
+.company{
+    height: 582px;
+    background: url(../img/company.jpg) no-repeat center/cover;
+}
+.company .inner{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.company .inner .desc-wrap{
+    position: absolute;
+    top: 200px;
+    left: 671px;
+    width: 526px;
+    height: 210px;
+}
+.company .inner .desc-wrap h1{
+    color: rgb(66, 66, 66);
+    font-size: 30px;
+}
+.company .inner .desc-wrap p{
+    color: rgb(128, 128, 128);
+    font-size: 14px;
+    margin-top: 42px;
+}
+.product {
+    padding: 60px 0;
+}
+.product .title {
+    text-align: center;
+}
+.product .title h1{
+    color: #262626;
+    font-size: 30px;
+    display: block;
+    line-height: 1;
+    font-weight: normal;
+    margin: 15px;
+}
+.product .title p{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 0;
+    line-height: normal;
+    vertical-align: top;
+    color: #848484;
+    line-height: 14px;
+    font-size: 14px;
+    padding: 0 15px;
+}
+.product .inner{
+    width: 1200px;
+    margin: 20px auto;
+}
+.product .inner .flex-box{
+    display: -webkit-box
+}
+.product .inner .flex-box .flex1{
+    -webkit-box-flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

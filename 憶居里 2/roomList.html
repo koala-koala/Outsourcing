@@ -1,0 +1,146 @@
+<!doctype html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <title>预订客房</title>
+    <link type="text/css" rel="stylesheet" href="css/global.css" />
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/zepto.fullpage.css">
+    <link type="text/css" rel="stylesheet" href="css/wrn_css.css" />
+</head>
+
+<body class="mainbody">
+    <div id="wrap" class="mainbody">
+        <div class="dateChooze">
+            <span class="time_span">
+    <span class="time_content"><i class="i_time"></i>选择日期</span>
+            <span class="del_timeSpan" style="display: none">清除</span>
+            </span>
+        </div>
+        <div class="calenderBody"></div>
+        <div class="wp">
+            <div class="wp-inner">
+                <div class="index_main section page">
+                    <div class="yi-wrapper">
+                        <img src="images/yi.png" class="yi">
+                        <p class="title">Hi Kate!</p>
+                        <p><img src="images/index-word-su.png"></p>
+                        <p>抛开城市喧嚣，小主带你体验
+                            <br/> 不一样的家的感觉！
+                        </p>
+                    </div>
+                    <span class="animated fadeInDown infinite"><img src="images/next-icon.png"></span>
+                </div>
+                <div class="listshow section page">
+                    <ul class="swipe-top">
+                        <li class="swipe-box">
+                            <img src="images/img3.jpg">
+                            <span class="bed_flag">
+                  <i class="ibed">大床房</i>
+                </span>
+                            <div class="room_desc">
+                                <div class="d_title">禅·憶</div>
+                                <div class="d_content">天下最神秘的地方，
+                                    <br /> 也是天下最公开的地方!
+                                </div>
+                                <div class="d_price">￥1999</div>
+                            </div>
+                        </li>
+                        <li class="swipe-box">
+                            <img src="images/img3.jpg">
+                            <span class="bed_flag">
+                  <i class="ibed">大床房</i>
+                </span>
+                            <div class="room_desc">
+                                <div class="d_title">禅·憶</div>
+                                <div class="d_content">天下最神秘的地方，
+                                    <br /> 也是天下最公开的地方!
+                                </div>
+                                <div class="d_price">￥1999</div>
+                            </div>
+                        </li>
+                        <li class="swipe-box">
+                            <img src="images/img3.jpg">
+                            <span class="bed_flag">
+                  <i class="ibed">大床房</i>
+                </span>
+                            <div class="room_desc">
+                                <div class="d_title">禅·憶</div>
+                                <div class="d_content">天下最神秘的地方，
+                                    <br /> 也是天下最公开的地方!
+                                </div>
+                                <div class="d_price">￥1999</div>
+                            </div>
+                        </li>
+                        <li class="swipe-box last">
+                            <div class="room_last_t">
+                                <p>一次入住 多次体验 小主带你</p>
+                                <h3>走进“不同”的<br/>憶居里</h3>
+                                <span class="bottom-single"></span>
+                            </div>
+                            <div class="pos_rel">
+                                <img src="images/list_last_img.jpg">
+                                <div class="mask_box">
+                                    <div class="room_desc_two">
+                                        <span class="quotation"></span>
+                                        <div class="d_main_title">禅·缘</div>
+                                        <p>双房组合</p>
+                                        <div class="d_price">￥1999</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swipe-box last">
+                            <img src="images/list_last_img.jpg">
+                            <div class="mask_box">
+                                <div class="room_desc_two">
+                                    <span class="quotation"></span>
+                                    <div class="d_main_title">唯·隐·逸</div>
+                                    <p>三房组合</p>
+                                    <div class="d_price">￥1999</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/public/zepto.min.js"></script>
+<script type="text/javascript" src="js/libs/zepto.fullpage.js"></script>
+<script type="text/javascript" src="js/libs/iscroll-probe.js"></script>
+<script src="js/libs/underscore-min.js"></script>
+<script type="text/javascript" src="js/roomList.js"></script>
+<script type="text/javascript" src="js/public/calendar.js"></script>
+<script>
+var cal = new calendar({
+    wrapper: '.calenderBody',
+    onElement: '.time_span',
+    startDate: new Date(),
+    onReserve: function() {
+        $(".time_content").text(cal.ReseveDate().replace(/\//g, '.') + " — ");
+        $(".del_timeSpan").show();
+    },
+    onLeave: function() {
+        $(".time_content").text(cal.ReseveDate().replace(/\//g, '.') + " — " + cal.LeaveDate().replace(/\//g, '.'));
+        $(".del_timeSpan").show();
+        //    myScroll.destroy()
+        $(".swipe-top").css({
+            "transform": "translate(0px, 0px) translateZ(0px)"
+        });
+    }
+});
+$(".del_timeSpan").on("touchstart", function(e) {
+    e.stopPropagation();
+    $(".time_content").html('<i class="i_time"></i>选择日期');
+    $(this).hide();
+    cal.reset();
+});
+</script>
+
+</html>

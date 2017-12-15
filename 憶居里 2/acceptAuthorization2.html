@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>预订客房</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="p15">
+            <div class="authorization">
+                <img src="images/right-default.jpg">
+                <div class="wrapper slideOver">
+                    <div class="key-wrapper">
+                        <i class="icon-key"></i>
+                        <h1>0422</h1>
+                    </div>
+                    <div class="title-wrapper">
+                        <h1>禅</h1>
+                        <p class="time">有效期：08-17 12:00至08-19 12:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="code-wrapper">
+            <p>长按二维码，关注 [憶居里]
+                <br/> 享受憶小主提供的便捷服务 </p>
+            <img src="images/code.jpg">
+        </div>
+        <div>
+            <div class="type-wrapper">
+                <i class="icon-service"></i>
+                <h4>入住服务</h4>
+                <p>更多的发现与体验等着您！</p>
+                <i class="icon-right"></i>
+            </div>
+            <div>
+                <ul class="list-box clearfix">
+                    <li>
+                        <a>
+                            <div class="h50">
+                                <i class="icon-key"></i>
+                            </div>
+                            <p>KEY 0683</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <div class="h50">
+                                <i class="icon-clock"></i>
+                            </div>
+                            <p>Check-out</p>
+                        </a>
+                    </li>
+                    <li id="wifi">
+                        <a>
+                            <div class="h50">
+                                <i class="icon-wifi"></i>
+                            </div>
+                            <p>Free WIFI</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="car">
+                            <div class="h50">
+                                <i class="icon-car"></i>
+                            </div>
+                            <p>接送</p>
+                        </a>
+                        <div class="func-wrapper">
+                            <a>掌柜来接</a>
+                            <a>代客叫车</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a>
+                            <div class="h50">
+                                <i class="icon-clean"></i>
+                            </div>
+                            <p>客房打扫</p>
+                        </a>
+                        <div class="func-wrapper">
+                            <a>即时打扫</a>
+                            <a>免打扰</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="title-line-wrapper bgrey mt100 pb0">
+                    <span class="title-line">房间补给</span>
+                </div>
+                <ul class="list-box clearfix">
+                    <li id="foodList">
+                        <a>
+                            <div class="h50">
+                                <i class="icon-food"></i>
+                            </div>
+                            <p>小食</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <div class="h50">
+                                <i class="icon-wash"></i>
+                            </div>
+                            <p>洗漱品</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <div class="h50">
+                                <i class="icon-bucao"></i>
+                            </div>
+                            <p>布草</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="white">
+            <p class="text-c lh60 white font19">公共设施</p>
+            <ul class="media-thumb-list">
+                <li>
+                    <img src="images/pay_success_coffee.jpg">
+                    <p>温泉</p>
+                </li>
+                <li>
+                    <img src="images/pay_success_bar.jpg">
+                    <p>书吧</p>
+                </li>
+                <li>
+                    <img src="images/pay_success_hotspring.jpg">
+                    <p>咖啡吧</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--wifi-->
+    <div class="popupMask" id="popup-wifi">
+        <div class="black-bg popup">
+            <img src="images/ewmCode.jpg" class="ewmCode" />
+            <div class="equipment">
+                <div class="andrioduser">
+                    <h3>Andriod用户</h3>
+                    <p>长按二维码即可自动链接</p>
+                </div>
+                <div class="andrioduser">
+                    <h3>Ios用户</h3>
+                    <p>1:长按二维码，自动复制密码
+                        <br /> 2:选择憶居里wifi：“XXX”,粘贴密码
+                        <br /> 3:成功链接！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--小食单-->
+    <div class="popupMask" id="popup-foodList">
+        <div class="black-bg  popup">
+            <h3 class="foodTitle">小食单</h3>
+            <ul class="foodList paddlr35">
+                <li class="clearfix">
+                    <div class="addreducebtn"><span class="reduceBtn"></span><i class="num">1</i><span class="addBtn"></span></div>
+                    <p class="foodname">今日小食free wifi</p>
+                </li>
+                <li class="clearfix">
+                    <div class="addreducebtn"><span class="reduceBtn"></span><i class="num"></i><span class="addBtn"></span></div>
+                    <p class="foodname">今日小食free wifi</p>
+                </li>
+                <li class="clearfix">
+                    <div class="addreducebtn"><span class="reduceBtn"></span><i class="num"></i><span class="addBtn"></span></div>
+                    <p class="foodname">今日小食free wifi</p>
+                </li>
+                <li class="clearfix">
+                    <div class="addreducebtn"><span class="reduceBtn"></span><i class="num"></i><span class="addBtn"></span></div>
+                    <p class="foodname">今日小食free wifi</p>
+                </li>
+                <li class="clearfix">
+                    <div class="addreducebtn"><span class="reduceBtn"></span><i class="num"></i><span class="addBtn"></span></div>
+                    <p class="foodname">今日小食free wifi</p>
+                </li>
+                <li class="clearfix">
+                    <div class="addreducebtn"><span class="reduceBtn"></span><i class="num"></i><span class="addBtn"></span></div>
+                    <p class="foodname">今日小食free wifi</p>
+                </li>
+            </ul>
+            <div class="submitOrder">
+                ￥<span>1358</span>·提交订单
+            </div>
+        </div>
+    </div>
+    <!--确认用车-->
+    <div class="confirmMask" id="confirm-car">
+        <div class="confirm">
+            <p class="title">确认用车</p>
+            <p class="desc">现在出行需要用车，请立即安排叫车</p>
+            <a class="cred" id="cancel">取消</a>
+            <a>确认用车</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/public/zepto.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('#wifi').bind('tap', function() {
+        $('#popup-wifi').fadeIn();
+    });
+    $('#popup-wifi').bind('tap', function() {
+        $('#popup-wifi').fadeOut();
+    });
+    $('#foodList').bind('tap', function() {
+        $('#popup-foodList').fadeIn();
+    });
+    $('.submitOrder').bind('tap', function() {
+        $('#popup-foodList').fadeOut();
+    });
+    $('#car').bind('tap', function() {
+        $('#confirm-car').fadeIn();
+    });
+    $('#cancel').bind('tap', function() {
+        $('#confirm-car').fadeOut();
+    });
+    $(".addBtn").tap(function() {
+        var num = Number($(this).siblings(".num").text());
+        if (num) {
+            $(this).siblings(".reduceBtn").css("display", "inline-block");
+        }
+        $(this).siblings(".num").text(num + 1);
+
+    });
+
+    $(".reduceBtn").tap(function() {
+        var num = Number($(this).siblings(".num").text());
+        if (num <= 1) {
+            $(this).css("display", "none");
+            $(this).siblings(".num").text("");
+        } else {
+            $(this).siblings(".num").text(num - 1);
+        }
+    });
+});
+</script>
+
+</html>

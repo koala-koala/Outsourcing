@@ -38,4 +38,11 @@ $(function() {
     $('.layer').fadeIn();
     $('.popup-transport').fadeIn();
   });
+
+  $('body').on('tap', '.icon-close.mask-close', function() {
+    $(this).parent('.mask').fadeOut();
+  });
+  $('body').on('tap', '.cancel', function() {
+    $('.mask').fadeOut();
+  });
 })

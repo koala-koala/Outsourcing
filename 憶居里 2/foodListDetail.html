@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <title>餐饮</title>
+    <link type="text/css" rel="stylesheet" href="css/global.css" />
+    <link type="text/css" rel="stylesheet" href="css/wrn_css.css" />
+</head>
+
+<body>
+    <div id="wrap" class="grey">
+            <div class="top">
+                <div class="swipe" id="slider2">
+                    <ul class="swipe-wrap">
+                        <li class="swipe-box">
+                            <img src="images/food1.jpg">
+                        </li>
+                        <li class="swipe-box">
+                            <img src="images/food3.jpg">
+                        </li>
+                        <li class="swipe-box">
+                            <img src="images/food2.jpg">
+                        </li>
+                        <li class="swipe-box">
+                            <img src="images/food3.jpg">
+                        </li>
+                    </ul>
+                    <span class="num"><i class="nowpage">1</i>/<i class="total">3</i></span>
+                </div>
+            </div>
+            <div class="contentMain">
+                <span class="single"></span>
+                <div class="title">
+                    <h3>胶原美人羹</h3>
+                    <p>天下最神秘的地方，却也是天下最公开的地方。</p>
+                </div>
+            </div>
+            
+            <div class="chooze detailsCon">
+                <h3>【精选食材】</h3>
+                <div class="show introduce nominHeight foodImg">
+                    <img src="images/food4.jpg" alt="" />
+                </div>
+            </div>
+    </div>
+    <div class="maskBalck" style="display:block;z-index:-1">
+        <div class="swipe" id="sliderbig">
+            <ul class="swipe-wrap">
+                <li class="swipe-box">
+                    <img src="images/img1.jpg">
+                </li>
+                <li class="swipe-box">
+                    <img src="images/img1.jpg">
+                </li>
+                <li class="swipe-box">
+                    <img src="images/img1.jpg">
+                </li>
+                <li class="swipe-box">
+                    <img src="images/img1.jpg">
+                </li>
+            </ul>
+        </div>
+        <span class="num"><i class="nowpage">1</i>/<i class="total">3</i></span>
+    </div>
+</body>
+<script src="js/public/zepto.min.js"></script>
+<script type="text/javascript" src="js/libs/swipe.min.js"></script>
+<script type="text/javascript">
+    window.mySwipe1 = new Swipe(document.getElementById('slider2'), {
+              startSlide: 0,
+              speed: 1000,
+              auto: 3000,
+              continuous: true,
+              disableScroll: false,
+              stopPropagation: false,
+              transitionEnd: function(index, elem) {
+                //console.log(index);
+              },
+              callback:function(index, elem) {
+                $("#slider2 .num .nowpage").text(index+1);
+              }
+          });
+        var total1 = $("#slider2 li").length;
+        $("#slider2 .num .total").text(total1);
+
+    //新增全屏滚动
+    window.mySwipe2 = new Swipe(document.getElementById('sliderbig'), {
+                          startSlide: 0,
+                          speed: 1000,
+                          auto: 0,
+                          continuous: true,
+                          disableScroll: false,
+                          stopPropagation: false,
+                          transitionEnd: function(index, elem) {
+                          },
+                          callback:function(index, elem) {
+                            $(".maskBalck .num .nowpage").text(index+1);
+                          }
+            });
+    var total2 = mySwipe2.getNumSlides();
+    $(".maskBalck .num .total").text(total2);
+    let wheight = $(".swipe-wrap").height();
+    $(".top").css({
+        "width":"100%",
+        "height":wheight
+    })
+    $(document).on("tap","#slider2 li",function(){
+        $('.maskBalck').css('z-index','100');
+        var _index = $(this).index();
+        mySwipe2.slide(_index,1000);
+
+        $(".maskBalck").tap(function(e){
+            if(e.target.className=="maskBalck"){
+            $('.maskBalck').css('z-index','-1');
+            }
+        })
+    });
+</script>
+</html>

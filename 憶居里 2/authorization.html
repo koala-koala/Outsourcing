@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>预订客房</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+
+<body>
+    <div class="main ">
+        <div class="p15">
+            <div class="authorization">
+                <img src="images/right-default.jpg">
+                <div class="wrapper">
+                    <div class="key-wrapper">
+                        <i class="icon-key"></i>
+                        <h1>0422</h1>
+                    </div>
+                    <div class="title-wrapper">
+                        <h1>禅</h1>
+                        <p class="time">2016-08-15 入住2天</p>
+                    </div>
+                </div>
+                <div class="sliderLock" id="sliderLock"></div>
+            </div>
+            <div class="btn-wrapper mt30">
+                <a class="btn-block btn-w180" id="share">分享给好友</a>
+            </div>
+        </div>
+        <div class="person-wrapper mt30">
+            <p class="title">已接收入住人</p>
+            <ul class="media-list">
+                <li>
+                    <img src="images/avatar.jpg">
+                    <div class="li-c">
+                        <p>KATE</p>
+                        <time>2016-08-17 13：58</time>
+                    </div>
+                    <i class="icon-tick"></i>
+                </li>
+                <li>
+                    <img src="images/avatar.jpg">
+                    <div class="li-c">
+                        <p>KATE</p>
+                        <time>2016-08-17 13：58</time>
+                    </div>
+                    <i class="icon-tick"></i>
+                </li>
+                <li>
+                    <img src="images/avatar.jpg">
+                    <div class="li-c">
+                        <p>KATE</p>
+                        <time>2016-08-17 13：58</time>
+                    </div>
+                    <i class="icon-tick"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="notice-wrapper mt15">
+            <h1>使用说明:</h1>
+            <p>1. 滑动“开启”获取您所订房间的密钥
+                <br/> 2. “开启”后将同时开通【憶居里公众号】- 【入住礼遇】功能，享受线上各项客房服务。
+                <br/> 3. 您可将此页面分享给好友，对方接受后将获取此 房间密钥和线上服务。
+            </p>
+        </div>
+    </div>
+    <div class="popupMask" style="background: none" id="shareMask">
+        <div class="shareMask">
+            <img src="images/share-arrow.png" class="share">
+            <p>
+                通过<span class="orange">“浏览器”</span>
+                <br/> 打开此页面，
+                <br/> 可通过
+                <span class="orange">“支付宝”</span>完成支付！
+                <br/>
+            </p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/public/zepto.min.js"></script>
+<script type="text/javascript" src="js/libs/Zepto.SliderLock.js"></script>
+<script type="text/javascript">
+var slider = new SliderLock("#sliderLock", {
+    radius: 50,
+    barMargin: 0,
+    init: function() {},
+    failed: function() {},
+    succeed: function() {
+        $('.title-wrapper .time').text('有效期：08-17 12:00至08-19 12:00');
+        $('.key-wrapper').fadeIn();
+        $('#sliderLock').hide();
+        $('.title-wrapper').hide();
+        $('.wrapper').addClass('slideOver');
+        $('.title-wrapper').fadeIn();
+    }
+});
+$('#share').bind('tap', function() {
+    $('#shareMask').fadeIn();
+});
+$('#shareMask').bind('tap', function() {
+    $(this).fadeOut();
+});
+</script>
+
+</html>
